@@ -3,10 +3,13 @@ package br.com.gustavo.kaki;
 public class Ovo {
 	private Integer tamanho;
 	private String status;
-	private Integer contFritar = 0;
-	private Boolean quebrado = false;
+	private Integer contFritar;
+	private Boolean quebrado;
+	
 	public Ovo(Integer tamanho) {
 		this.tamanho = tamanho;
+		this.quebrado = false;
+		this.contFritar = 0;
 	}
 	
 	public void fritar() {
